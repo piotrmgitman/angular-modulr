@@ -1,0 +1,43 @@
+@import '../../../scss/colors';
+
+.container.footer {
+    max-height: 100px;
+    font-size: 12px;
+    .footer-logo {
+        height: 30px;
+        max-width: none;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .navbar-text {
+        margin-right: 0px;
+        margin-left: 0px;
+        color: $light-grey-color !important;
+    }
+}
+
+.navbar-inverse {
+    background-color: $pebble-color !important;
+    border-color: transparent !important;
+}
+
+.nav>li>a {
+    display: inline-block !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+@media (min-width: 768px) {
+    .navbar-static-bottom {
+        border-radius: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-text {
+        float: left !important;
+    }
+}
