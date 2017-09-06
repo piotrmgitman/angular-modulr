@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'scss/variables';
+@import 'scss/colors';
 
 @import '../node_modules/font-awesome/scss/font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -10,5 +11,6 @@ html, body {
 }
 body {
     font-family: 'Lato', sans-serif !important;
+    color: $pebble-color !important;
 }
 
