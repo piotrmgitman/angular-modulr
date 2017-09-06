@@ -2,6 +2,8 @@
 
 This project was generated with [@angular/cli] version 1.3.2.
 
+It has also RESTful API build with Node and Express.
+
 ## Installation and Usage
 You should have:
     - node v7.5.0
@@ -27,9 +29,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). Tests are currently not updated.
+Tests are currently not updated, however you can run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`. Tests are currently not updated.
+Tests are currently not updated, however you can run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+Before running the tests make sure you are serving the app via `ng serve`.
