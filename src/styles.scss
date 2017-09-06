@@ -3,4 +3,12 @@
 @import 'scss/variables';
 
 @import '../node_modules/font-awesome/scss/font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Lato', sans-serif !important;
+}
 
