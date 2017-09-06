@@ -1,0 +1,18 @@
+@import '../../../scss/colors';
+
+.container.content {
+    height: auto;
+    min-height: 400px;
+    padding-left: 0;
+    padding-right: 0;
+    .search {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container.content {
+        padding: 0 15px;
+    }
+}
