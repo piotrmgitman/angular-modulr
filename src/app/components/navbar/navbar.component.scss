@@ -1,0 +1,43 @@
+@import '../../../scss/colors';
+
+.navbar-inverse {
+    background-color: $pebble-color !important;
+    border-color: transparent !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
+    border-bottom: 4px solid $spray-color;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: $light-grey-color !important;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: $white-color !important;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: $wave-color !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: $wave-color !important;
+}
+
+.fa-user{
+    padding-right: 8px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        margin-left: -15px;
+    }
+   .navbar > .container {
+        padding-left:0px;
+        padding-right:0px;
+    }
+}
