@@ -8,11 +8,10 @@ You should have:
     - npm v4.1.2
 
 To use angular-modulr first install globally via npm:
-    - npm install -g @angular/cli typescript serve webpack webpack-dev-server
+    `npm install -g @angular/cli typescript serve webpack webpack-dev-server`
 
 To run:
-    - npm install
-    - npm run dev
+    `npm install && npm run dev`
 
 ## Development server
 
