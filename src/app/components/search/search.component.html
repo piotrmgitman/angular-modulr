@@ -1,0 +1,54 @@
+<div class="col-md-12 search">
+  
+    <div class="row aligner">
+      <div class="col-xs-6 col-sm-6 col-md-6">
+        <form action="">
+          <label for="searchphrase">Search for an account by account name or ID</label>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter an account name or ID" [(ngModel)]="searchphrase" name="searchphrase"
+              (keyup)="search()" [disabled]="isDisabled">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" (click)="showAll()">Go!</button>
+              </span>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 aligner-bottom">
+        <button class="btn btn-primary pull-right" type="button">Create new customer</button>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+    <div class="row">
+      <div class="col-md-12 loader">
+        <div class="spinner" [hidden]="spinner">
+          <img src="assets/images/spinner.svg" class="center-block img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+  
+    <br/><br/>
+  
+    <table class="table table-bordered" *ngIf="results?.length > 0 && spinner">
+      <thead>
+        <tr class="active">
+          <th>Account ID</th>
+          <th>Account Name<i class="fa" [ngClass]="{'fa-caret-down': !orderType, 'fa-caret-up': orderType}" (click)="orderType = !orderType"></i></th>
+          <th>Account Number</th>
+          <th>Sort Code</th>
+          <th>Balance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of results | orderBy : 'name' : orderType">
+          <th scope="row">{{result.customerId}}</th>
+          <td>{{result.name}}</td>
+          <td>{{result.identifiers[0].accountNumber}}</td>
+          <td>{{result.identifiers[0].sortCode}}</td>
+          <td>{{result.balance}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- /.table -->
+  
+  </div>
