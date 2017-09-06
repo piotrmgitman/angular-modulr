@@ -12,6 +12,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { OrderByPipe } from './pipes/orderby/orderby.pipe';
 import { SearchComponent } from './components/search/search.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SearchComponent } from './components/search/search.component';
     AdminComponent,
     PageNotFoundComponent,
     OrderByPipe,
-    SearchComponent
+    SearchComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
