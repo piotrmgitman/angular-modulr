@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { ContentComponent } from './components/content/content.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -10,9 +12,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
-import { OrderByPipe } from './pipes/orderby/orderby.pipe';
 import { SearchComponent } from './components/search/search.component';
 import { UserComponent } from './components/user/user.component';
+
+import { OrderByPipe } from './pipes/orderby/orderby.pipe';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ import { UserComponent } from './components/user/user.component';
     ReportsComponent,
     AdminComponent,
     PageNotFoundComponent,
-    OrderByPipe,
     SearchComponent,
-    UserComponent
+    UserComponent,
+    OrderByPipe,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
     AppRoutingModule
   ],
   providers: [],
