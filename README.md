@@ -21,7 +21,7 @@ Run `npm run dev` for a dev server. Navigate to `http://localhost:4200/`. The ap
 
 ## Production server
 
-Run `npm run prod` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files. Server has not CORS being enabled.
+Run `npm run prod` for a prod server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files. Server has not CORS being enabled.
 
 ## Build
 
