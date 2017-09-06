@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { OrderByPipe } from './pipes/orderby/orderby.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageNotFoundComponent } from './components/pagenotfound/pagenotfound.co
     FooterComponent,
     ReportsComponent,
     AdminComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,
