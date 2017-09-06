@@ -1,0 +1,63 @@
+@import '../../../scss/colors';
+
+.aligner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aligner-top {
+    align-self: flex-start;
+  }
+.aligner-bottom {
+    align-self: flex-end;
+}
+
+.fa-caret-down, .fa-caret-up {
+    min-width: 20px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.btn.btn-primary {
+    background-color: $wave-color !important;
+    border: 1px solid $wave-color !important;
+    border-radius: 0 !important;
+}
+
+.loader {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: transform 0.1s;
+    pointer-events: none;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.spinner {
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -ms-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+ }
+
+ @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(30deg); }
+    100% { -webkit-transform: rotate(360deg); }
+ }
+ @-moz-keyframes spin {
+    0% { -moz-transform: rotate(30deg); }
+    100% { -moz-transform: rotate(360deg); }
+ }
+ @-o-keyframes spin {
+    0% { -o-transform: rotate(30deg); }
+    100% { -o-transform: rotate(360deg); }
+ }
+ @-ms-keyframes spin {
+    0% { -ms-transform: rotate(30deg); }
+    100% { -ms-transform: rotate(360deg); }
+ }
